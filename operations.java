@@ -5,6 +5,10 @@ public class operations{
         Scanner num1 = new Scanner(System.in);
         Scanner num2 = new Scanner(System.in);
         Scanner opr = new Scanner(System.in);
+        Scanner cho = new Scanner(System.in);
+        String choise = "Y";
+       
+       while(choise.equals("Y")) { 
         System.out.println("Enter two number");
         double number1 = num1.nextDouble();
         double number2 = num2.nextDouble();
@@ -26,8 +30,8 @@ public class operations{
             default:
                 break;
         }
-
-
-
+        System.out.println("Do you want to continue [Y/N]");
+        choise = cho.nextLine();
+       } 
     }
 }
